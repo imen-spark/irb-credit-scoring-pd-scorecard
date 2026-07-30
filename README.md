@@ -49,7 +49,5 @@ The notebook expects the file at the project root as `base_SNI.xlsx` — update 
 └── README.md
 ## Limitations & Next Steps
 
-- **Categorical encoding**: currently uses LabelEncoder, which imposes an artificial ordinal structure on nominal variables (profession, nationality, etc.). Since IV/WoE was already computed for variable selection, switching to WoE-encoding for the model itself is the priority fix.
-- **Low precision (5.9%)**: at the current threshold, the model flags a large number of false positives. Threshold tuning and a cost-based decision analysis are planned.
-- **No calibration check**: a calibration curve or Hosmer-Lemeshow test is needed before this PD feeds into any scorecard used for decisions.
+- **Categorical encoding**: currently uses LabelEncoder, which imposes an artificial ordinal structure on nominal variables (profession, nationality, etc.). Since IV/WoE was already computed for variable selection, switching to WoE-encoding for the model itself is the priority fix..
 - **Single model, no challenger**: a gradient boosting challenger model (with SHAP explainability) is planned for comparison.
