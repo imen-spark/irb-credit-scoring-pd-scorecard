@@ -37,7 +37,7 @@ The notebook expects the file at the project root as `base_SNI.xlsx` — update 
 | AUC | 0.799 | 0.764 |
 | GINI | 0.598 | 0.529 |
 | Recall | — | 71.4% |
-| Precision | — | 5.9% |
+
 
 ## Repo Structure
 ├── notebooks/
